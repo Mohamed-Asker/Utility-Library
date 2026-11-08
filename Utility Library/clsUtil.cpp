@@ -70,3 +70,12 @@ std::string clsUtil::GenerateWord(enCharacterType CharType, short Length)
 		word += RandomCharacter(CharType);
 	return word;
 }
+
+//Operation(5)
+std::string clsUtil::GenerateKey(enCharacterType CharType, short KeyLength, short WordLength)
+{
+	std::string key = "";
+	for (int i = 1; i <= KeyLength; i++)
+		key += (GenerateWord(CharType, WordLength) + "-");
+	return key.substr(0, key.length() - 1);
+}

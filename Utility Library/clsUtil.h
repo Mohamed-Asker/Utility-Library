@@ -30,8 +30,11 @@ public:
 	static int RandomNumber(int from, int to);
 
 	//Operation(3)
-	static char RandomCharacter(enCharacterType CharType);
+	static char RandomCharacter(enCharacterType CharType = enCharacterType::CapitalLetter);
 
-	//Operation(3)
-	static std::string GenerateWord(enCharacterType CharType, short Length = 4);
+	//Operation(4)
+	static std::string GenerateWord(enCharacterType CharType = enCharacterType::CapitalLetter, short Length = 4);
+
+	//Operation(5)
+	static std::string GenerateKey(enCharacterType CharType = enCharacterType::CapitalLetter, short KeyLength = 4, short WordLength = 4);
 };
