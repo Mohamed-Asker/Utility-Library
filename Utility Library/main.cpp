@@ -11,7 +11,7 @@ int main()
 	std::string Arr[5];
 	int Length = 5;
 	
-	clsUtil::FillArrayWithRandomKeys(Arr, Length, 6, 5, clsUtil::MixChars);
+	std::cout << "A" << clsUtil::Tabs(5) << "B";
 
 
 	system("pause>0");

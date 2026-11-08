@@ -71,4 +71,6 @@ public:
 	//Operation(16)
 	static void FillArrayWithRandomKeys(std::string Arr[], int ArrLength, int KeyLength = 4, int WordLength = 4, enCharacterType CharType = enCharacterType::CapitalLetter);
 
+	//Operation(16)
+	static std::string Tabs(short NumberOfTabs = 1);
 };

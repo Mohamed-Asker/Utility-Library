@@ -160,3 +160,12 @@ void clsUtil::FillArrayWithRandomKeys(std::string Arr[], int ArrLength, int KeyL
 	for (int i = 0; i < ArrLength; i++)
 		Arr[i] = GenerateKey(CharType, KeyLength, WordLength);
 }
+
+//Operation(17)
+std::string clsUtil::Tabs(short NumberOfTabs)
+{
+	std::string tabs = "";
+	for (short i = 1; i <= NumberOfTabs; i++)
+		tabs += "\t";
+	return tabs;
+}
