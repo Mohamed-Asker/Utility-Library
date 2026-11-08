@@ -62,6 +62,13 @@ public:
 	//Operation(13)
 	static void ShuffleArray(double Arr[], int ArrLength);
 
+	//Operation(14)
+	static void FillArrayWithRandomNumbers(int Arr[], int ArrLength, int from = 1, int to = 10);
 
+	//Operation(15)
+	static void FillArrayWithRandomWords(std::string Arr[], int ArrLength, int WordLength = 4, enCharacterType CharType = enCharacterType::CapitalLetter);
+
+	//Operation(16)
+	static void FillArrayWithRandomKeys(std::string Arr[], int ArrLength, int KeyLength = 4, int WordLength = 4, enCharacterType CharType = enCharacterType::CapitalLetter);
 
 };

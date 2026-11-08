@@ -139,3 +139,24 @@ void clsUtil::ShuffleArray(double Arr[], int ArrLength)
 	for (int i = ArrLength - 1; i > 0; i--)
 		Swap(Arr[i], Arr[RandomNumber(0, i)]);
 }
+
+//Operation(14)
+void clsUtil::FillArrayWithRandomNumbers(int Arr[], int ArrLength, int from, int to)
+{
+	for (int i = 0; i < ArrLength; i++)
+		Arr[i] = RandomNumber(from, to);
+}
+
+//Operation(15)
+void clsUtil::FillArrayWithRandomWords(std::string Arr[], int ArrLength, int WordLength, enCharacterType CharType)
+{
+	for (int i = 0; i < ArrLength; i++)
+		Arr[i] = GenerateWord(CharType, WordLength);	
+}
+
+//Operation(16)
+void clsUtil::FillArrayWithRandomKeys(std::string Arr[], int ArrLength, int KeyLength, int WordLength, enCharacterType CharType)
+{
+	for (int i = 0; i < ArrLength; i++)
+		Arr[i] = GenerateKey(CharType, KeyLength, WordLength);
+}

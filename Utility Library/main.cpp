@@ -8,10 +8,10 @@ int main()
 {
 	clsUtil::Srand();
 	
-	double Arr[] = { 1.5,2,3.5,4 };
-	int Length = 4;
+	std::string Arr[5];
+	int Length = 5;
 	
-	clsUtil::ShuffleArray(Arr, Length);
+	clsUtil::FillArrayWithRandomKeys(Arr, Length, 6, 5, clsUtil::MixChars);
 
 
 	system("pause>0");
