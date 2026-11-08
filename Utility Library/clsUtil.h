@@ -15,7 +15,8 @@ public:
 		SmallLetter = 1,
 		CapitalLetter = 2,
 		DigitLetter = 3,
-		MixChars = 4
+		MixChars = 4,
+		SpecialLetter = 5
 	};
 
 	//Operations
@@ -24,4 +25,7 @@ public:
 
 	//Operation(2)
 	static int RandomNumber(int from, int to);
+
+	//Operation(3)
+	static char RandomCharacter(enCharacterType CharType);
 };
