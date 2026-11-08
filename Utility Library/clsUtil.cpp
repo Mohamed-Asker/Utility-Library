@@ -86,3 +86,35 @@ void clsUtil::GenerateKeys(short NumberOfKeys, enCharacterType CharType, short K
 	for (short i = 1; i <= NumberOfKeys; i++)
 		std::cout << "Key [" << i << "]: " << GenerateKey(CharType, KeyLength, WordLength) << "\n";
 }
+
+//Operation(7)
+void clsUtil::Swap(int& Value1, int& Value2)
+{
+	int tempValue = Value1;
+	Value1 = Value2;
+	Value2 = tempValue;
+}
+
+//Operation(8)
+void clsUtil::Swap(std::string& Value1, std::string& Value2)
+{
+	std::string tempValue = Value1;
+	Value1 = Value2;
+	Value2 = tempValue;
+}
+
+//Operation(9)
+void clsUtil::Swap(double& Value1, double& Value2)
+{
+	double tempValue = Value1;
+	Value1 = Value2;
+	Value2 = tempValue;
+}
+
+//Operation(10)
+void clsUtil::Swap(clsDate& Value1, clsDate& Value2)
+{
+	clsDate tempValue = Value1;
+	Value1 = Value2;
+	Value2 = tempValue;
+}

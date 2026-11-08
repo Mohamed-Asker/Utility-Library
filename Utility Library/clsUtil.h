@@ -41,7 +41,17 @@ public:
 	//Operation(6)
 	static void GenerateKeys(short NumberOfKeys, enCharacterType CharType = enCharacterType::CapitalLetter, short KeyLength = 4, short WordLength = 4);
 	
+	//Operation(7)
+	static void Swap(int& Value1, int& Value2);
 
+	//Operation(8)
+	static void Swap(std::string& Value1, std::string& Value2);
+
+	//Operation(9)
+	static void Swap(double& Value1, double& Value2);
+
+	//Operation(10)
+	static void Swap(clsDate& Value1, clsDate& Value2);
 
 
 

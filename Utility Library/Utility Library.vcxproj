@@ -139,10 +139,14 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Date Library\Date Library\clsDate.cpp" />
+    <ClCompile Include="..\..\String Library\String Library\clsString.cpp" />
     <ClCompile Include="clsUtil.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Date Library\Date Library\clsDate.h" />
+    <ClInclude Include="..\..\String Library\String Library\clsString.h" />
     <ClInclude Include="clsUtil.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
