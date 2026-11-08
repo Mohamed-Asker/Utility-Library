@@ -118,3 +118,24 @@ void clsUtil::Swap(clsDate& Value1, clsDate& Value2)
 	Value1 = Value2;
 	Value2 = tempValue;
 }
+
+//Operation(11)
+void clsUtil::ShuffleArray(int Arr[], int ArrLength)
+{
+	for (int i = ArrLength - 1; i > 0; i--)
+		Swap(Arr[i], Arr[RandomNumber(0, i)]);
+}
+
+//Operation(12)
+void clsUtil::ShuffleArray(std::string Arr[], int ArrLength)
+{
+	for (int i = ArrLength - 1; i > 0; i--)
+		Swap(Arr[i], Arr[RandomNumber(0, i)]);
+}
+
+//Operation(13)
+void clsUtil::ShuffleArray(double Arr[], int ArrLength)
+{
+	for (int i = ArrLength - 1; i > 0; i--)
+		Swap(Arr[i], Arr[RandomNumber(0, i)]);
+}

@@ -8,15 +8,11 @@ int main()
 {
 	clsUtil::Srand();
 	
-	clsDate A;
-	clsDate B("10/4/2001");
-
-	A.PrintDate();
-	B.PrintDate();
-	clsUtil::Swap(A, B);
-	A.PrintDate();
-	B.PrintDate();
+	double Arr[] = { 1.5,2,3.5,4 };
+	int Length = 4;
 	
+	clsUtil::ShuffleArray(Arr, Length);
+
 
 	system("pause>0");
 	return 0;

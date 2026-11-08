@@ -53,6 +53,15 @@ public:
 	//Operation(10)
 	static void Swap(clsDate& Value1, clsDate& Value2);
 
+	//Operation(11)
+	static void ShuffleArray(int Arr[], int ArrLength);
+
+	//Operation(12)
+	static void ShuffleArray(std::string Arr[],int ArrLength);
+
+	//Operation(13)
+	static void ShuffleArray(double Arr[], int ArrLength);
+
 
 
 };
