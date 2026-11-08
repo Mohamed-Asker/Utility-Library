@@ -37,4 +37,12 @@ public:
 
 	//Operation(5)
 	static std::string GenerateKey(enCharacterType CharType = enCharacterType::CapitalLetter, short KeyLength = 4, short WordLength = 4);
+
+	//Operation(6)
+	static void GenerateKeys(short NumberOfKeys, enCharacterType CharType = enCharacterType::CapitalLetter, short KeyLength = 4, short WordLength = 4);
+	
+
+
+
+
 };

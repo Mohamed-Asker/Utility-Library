@@ -79,3 +79,10 @@ std::string clsUtil::GenerateKey(enCharacterType CharType, short KeyLength, shor
 		key += (GenerateWord(CharType, WordLength) + "-");
 	return key.substr(0, key.length() - 1);
 }
+
+//Operation(6)
+void clsUtil::GenerateKeys(short NumberOfKeys, enCharacterType CharType, short KeyLength, short WordLength)
+{
+	for (short i = 1; i <= NumberOfKeys; i++)
+		std::cout << "Key [" << i << "]: " << GenerateKey(CharType, KeyLength, WordLength) << "\n";
+}

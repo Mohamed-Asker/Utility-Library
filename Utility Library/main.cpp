@@ -7,7 +7,7 @@ int main()
 {
 	clsUtil::Srand();
 	
-	std::cout << clsUtil::GenerateKey(clsUtil::MixChars, 5, 6) << "\n";
+	clsUtil::GenerateKeys(5,clsUtil::MixChars, 6,3);
 
 
 	system("pause>0");
