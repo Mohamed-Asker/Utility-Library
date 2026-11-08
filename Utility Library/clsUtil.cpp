@@ -3,6 +3,14 @@
 
 
 
+
+//Helpers Functions
+char clsUtil::getSpecialCharacter()
+{
+	std::string SpecialCharacter = "!@#$%^&*()_+-={}[]|\\:;\"'<>,.?/~`";
+	return SpecialCharacter[RandomNumber(0, SpecialCharacter.length() - 1)];
+}
+
 //Operations
 //Operation(1)
 void clsUtil::Srand()
@@ -43,7 +51,7 @@ char clsUtil::RandomCharacter(enCharacterType CharType)
 	}
 	case enCharacterType::SpecialLetter:
 	{
-		return char(RandomNumber(33, 47));
+		return getSpecialCharacter();
 		break;
 	}
 	default:
@@ -52,4 +60,13 @@ char clsUtil::RandomCharacter(enCharacterType CharType)
 		break;
 	}
 	}
+}
+
+//Operation(4)
+std::string clsUtil::GenerateWord(enCharacterType CharType, short Length)
+{
+	std::string word = "";
+	for (short i = 1; i <= Length; i++)
+		word += RandomCharacter(CharType);
+	return word;
 }

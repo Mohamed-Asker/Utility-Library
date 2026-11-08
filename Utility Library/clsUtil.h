@@ -7,6 +7,9 @@
 
 class clsUtil
 {
+protected:
+	static char getSpecialCharacter();
+
 public:
 
 	//Enums
@@ -28,4 +31,7 @@ public:
 
 	//Operation(3)
 	static char RandomCharacter(enCharacterType CharType);
+
+	//Operation(3)
+	static std::string GenerateWord(enCharacterType CharType, short Length = 4);
 };

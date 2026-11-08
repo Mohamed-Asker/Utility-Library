@@ -7,7 +7,7 @@ int main()
 {
 	clsUtil::Srand();
 	
-	
+	std::cout << clsUtil::GenerateWord(clsUtil::MixChars,8) << "\n";
 
 
 	system("pause>0");
