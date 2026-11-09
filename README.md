@@ -8,7 +8,7 @@ A collection of useful helper functions designed to simplify common programming 
 
 ---
 
-## 🛠️ Technologies & Tools
+## 🛠️ <div align="center">Technologies & Tools</div>
 
 <div align="center">
 
@@ -18,9 +18,13 @@ A collection of useful helper functions designed to simplify common programming 
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
+
+
 ## 📌 Overview
 
 **clsUtil** is a C++ utility library that provides a set of reusable functions for random generation, swapping values, shuffling arrays, text encryption, and more.
+
+</div>
 
 ## ✨ Features
 
@@ -31,8 +35,6 @@ A collection of useful helper functions designed to simplify common programming 
 - 📝 Fill arrays with random numbers, words, and keys.
 - 🔒 Encrypt and decrypt text.
 - 📏 Generate tab spacing.
-
-</div>
 
 ## 📂 Project Structure
 
@@ -66,4 +68,3 @@ std::string RandomKey = clsUtil::GenerateKey();
 ## 👨‍💻 Author
 
 **Mohamed Askar**
-
