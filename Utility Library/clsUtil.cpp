@@ -169,3 +169,21 @@ std::string clsUtil::Tabs(short NumberOfTabs)
 		tabs += "\t";
 	return tabs;
 }
+
+//Operation(18)
+std::string clsUtil::EncryptText(std::string text, short EncryptionKey)
+{
+	for (int i = 0; i < text.length(); i++)
+		text[i] = char(text[i] + EncryptionKey);
+
+	return text;
+}
+
+//Operation(19)
+std::string clsUtil::DecryptText(std::string text, short DecryptionKey)
+{
+	for (int i = 0; i < text.length(); i++)
+		text[i] = char(text[i] - DecryptionKey);
+
+	return text;
+}

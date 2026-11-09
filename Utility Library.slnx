@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Utility Library/Utility Library.vcxproj" />
+  <Project Path="Utility Library/Utility Library.vcxproj" Id="7927b43a-a0cd-490f-8e04-87942036d604" />
 </Solution>

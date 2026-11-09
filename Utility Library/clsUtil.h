@@ -71,6 +71,13 @@ public:
 	//Operation(16)
 	static void FillArrayWithRandomKeys(std::string Arr[], int ArrLength, int KeyLength = 4, int WordLength = 4, enCharacterType CharType = enCharacterType::CapitalLetter);
 
-	//Operation(16)
+	//Operation(17)
 	static std::string Tabs(short NumberOfTabs = 1);
+
+	//Operation(18)
+	static std::string EncryptText(std::string text, short EncryptKey = 1);
+
+	//Operation(19)
+	static std::string DecryptText(std::string text, short DecryptKey = 1);
+
 };

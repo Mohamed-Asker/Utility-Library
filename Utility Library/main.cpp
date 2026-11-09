@@ -8,10 +8,12 @@ int main()
 {
 	clsUtil::Srand();
 	
-	std::string Arr[5];
-	int Length = 5;
-	
-	std::cout << "A" << clsUtil::Tabs(5) << "B";
+	std::string text = "Mohamed";
+	std::string test = clsUtil::EncryptText(text, 20);
+
+	std::cout << test << "\n";
+	std::cout << clsUtil::DecryptText(test, 20) << "\n";
+
 
 
 	system("pause>0");
