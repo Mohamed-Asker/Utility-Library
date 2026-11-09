@@ -8,7 +8,7 @@ A collection of useful helper functions designed to simplify common programming 
 
 ---
 
-## 🛠️ <div align="center">Technologies & Tools</div>
+## <div align="center">🛠️ Technologies & Tools</div>
 
 <div align="center">
 
