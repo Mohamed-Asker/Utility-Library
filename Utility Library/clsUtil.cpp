@@ -2,8 +2,6 @@
 #include "clsUtil.h"
 
 
-
-
 //Helpers Functions
 char clsUtil::getSpecialCharacter()
 {
@@ -120,48 +118,64 @@ void clsUtil::Swap(clsDate& Value1, clsDate& Value2)
 }
 
 //Operation(11)
+void clsUtil::Swap(bool& Value1, bool& Value2)
+{
+	bool tempValue = Value1;
+	Value1 = Value2;
+	Value2 = tempValue;
+}
+
+//Operation(12)
+void clsUtil::Swap(char& Value1, char& Value2)
+{
+	char tempValue = Value1;
+	Value1 = Value2;
+	Value2 = tempValue;
+}
+
+//Operation(13)
 void clsUtil::ShuffleArray(int Arr[], int ArrLength)
 {
 	for (int i = ArrLength - 1; i > 0; i--)
 		Swap(Arr[i], Arr[RandomNumber(0, i)]);
 }
 
-//Operation(12)
+//Operation(14)
 void clsUtil::ShuffleArray(std::string Arr[], int ArrLength)
 {
 	for (int i = ArrLength - 1; i > 0; i--)
 		Swap(Arr[i], Arr[RandomNumber(0, i)]);
 }
 
-//Operation(13)
+//Operation(15)
 void clsUtil::ShuffleArray(double Arr[], int ArrLength)
 {
 	for (int i = ArrLength - 1; i > 0; i--)
 		Swap(Arr[i], Arr[RandomNumber(0, i)]);
 }
 
-//Operation(14)
+//Operation(16)
 void clsUtil::FillArrayWithRandomNumbers(int Arr[], int ArrLength, int from, int to)
 {
 	for (int i = 0; i < ArrLength; i++)
 		Arr[i] = RandomNumber(from, to);
 }
 
-//Operation(15)
+//Operation(17)
 void clsUtil::FillArrayWithRandomWords(std::string Arr[], int ArrLength, int WordLength, enCharacterType CharType)
 {
 	for (int i = 0; i < ArrLength; i++)
 		Arr[i] = GenerateWord(CharType, WordLength);	
 }
 
-//Operation(16)
+//Operation(18)
 void clsUtil::FillArrayWithRandomKeys(std::string Arr[], int ArrLength, int KeyLength, int WordLength, enCharacterType CharType)
 {
 	for (int i = 0; i < ArrLength; i++)
 		Arr[i] = GenerateKey(CharType, KeyLength, WordLength);
 }
 
-//Operation(17)
+//Operation(19)
 std::string clsUtil::Tabs(short NumberOfTabs)
 {
 	std::string tabs = "";
@@ -170,7 +184,7 @@ std::string clsUtil::Tabs(short NumberOfTabs)
 	return tabs;
 }
 
-//Operation(18)
+//Operation(20)
 std::string clsUtil::EncryptText(std::string text, short EncryptionKey)
 {
 	for (int i = 0; i < text.length(); i++)
@@ -179,7 +193,7 @@ std::string clsUtil::EncryptText(std::string text, short EncryptionKey)
 	return text;
 }
 
-//Operation(19)
+//Operation(21)
 std::string clsUtil::DecryptText(std::string text, short DecryptionKey)
 {
 	for (int i = 0; i < text.length(); i++)

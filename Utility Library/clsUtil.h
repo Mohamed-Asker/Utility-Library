@@ -54,30 +54,36 @@ public:
 	static void Swap(clsDate& Value1, clsDate& Value2);
 
 	//Operation(11)
-	static void ShuffleArray(int Arr[], int ArrLength);
+	static void Swap(bool& Value1, bool& Value2);
 
 	//Operation(12)
-	static void ShuffleArray(std::string Arr[],int ArrLength);
+	static void Swap(char& Value1, char& Value2);
 
 	//Operation(13)
-	static void ShuffleArray(double Arr[], int ArrLength);
+	static void ShuffleArray(int Arr[], int ArrLength);
 
 	//Operation(14)
-	static void FillArrayWithRandomNumbers(int Arr[], int ArrLength, int from = 1, int to = 10);
+	static void ShuffleArray(std::string Arr[],int ArrLength);
 
 	//Operation(15)
-	static void FillArrayWithRandomWords(std::string Arr[], int ArrLength, int WordLength = 4, enCharacterType CharType = enCharacterType::CapitalLetter);
+	static void ShuffleArray(double Arr[], int ArrLength);
 
 	//Operation(16)
-	static void FillArrayWithRandomKeys(std::string Arr[], int ArrLength, int KeyLength = 4, int WordLength = 4, enCharacterType CharType = enCharacterType::CapitalLetter);
+	static void FillArrayWithRandomNumbers(int Arr[], int ArrLength, int from = 1, int to = 10);
 
 	//Operation(17)
-	static std::string Tabs(short NumberOfTabs = 1);
+	static void FillArrayWithRandomWords(std::string Arr[], int ArrLength, int WordLength = 4, enCharacterType CharType = enCharacterType::CapitalLetter);
 
 	//Operation(18)
-	static std::string EncryptText(std::string text, short EncryptKey = 1);
+	static void FillArrayWithRandomKeys(std::string Arr[], int ArrLength, int KeyLength = 4, int WordLength = 4, enCharacterType CharType = enCharacterType::CapitalLetter);
 
 	//Operation(19)
+	static std::string Tabs(short NumberOfTabs = 1);
+
+	//Operation(20)
+	static std::string EncryptText(std::string text, short EncryptKey = 1);
+
+	//Operation(21)
 	static std::string DecryptText(std::string text, short DecryptKey = 1);
 
 };
